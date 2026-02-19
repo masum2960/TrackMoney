@@ -1,0 +1,158 @@
+:root {
+  color-scheme: light dark;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+  background: #111827;
+  color: #e5e7eb;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 0.25rem 0 0;
+  color: #9ca3af;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+
+.summary article,
+.panel {
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.summary h2,
+.panel h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.summary p {
+  margin: 0.6rem 0 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+form {
+  display: grid;
+  gap: 0.8rem;
+}
+
+label {
+  display: grid;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
+
+input,
+select,
+button {
+  border-radius: 8px;
+  border: 1px solid #4b5563;
+  background: #111827;
+  color: inherit;
+  padding: 0.6rem 0.7rem;
+}
+
+button {
+  cursor: pointer;
+  border-color: #2563eb;
+  background: #2563eb;
+  font-weight: 600;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+.history-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.danger {
+  background: #b91c1c;
+  border-color: #b91c1c;
+}
+
+#history {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.7rem;
+  border: 1px solid #374151;
+  border-radius: 10px;
+}
+
+.entry-description {
+  margin: 0;
+  font-weight: 600;
+}
+
+.entry-date {
+  margin: 0.2rem 0 0;
+  font-size: 0.82rem;
+  color: #9ca3af;
+}
+
+.entry-right {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.entry-amount {
+  margin: 0;
+  font-weight: 700;
+}
+
+.delete-btn {
+  background: transparent;
+  border-color: #6b7280;
+  padding: 0.35rem 0.5rem;
+}
+
+.income {
+  color: #34d399;
+}
+
+.expense {
+  color: #f87171;
+}
+
+.empty {
+  color: #9ca3af;
+  font-style: italic;
+}
